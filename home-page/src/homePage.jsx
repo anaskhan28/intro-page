@@ -1,34 +1,33 @@
-import { useState } from 'react'
+import React from 'react'
 import './homePage.css'
 
 
-function App() {
-  const [count, setCount] = useState(0)
+function homePage() {
 
   return (
-    <section class="hero">
-    <div class="content">
+    <section className="hero">
+    <div className="content">
       <header>
         
         <span >BlockSpirit</span>
         <ul>
-          <li class="li"><a href="">Home</a></li>
-          <li class="li"><a href="">Market</a></li>
-          <li class="li"><a href="">Learnings</a></li>
-          <li class="li"><a href="">About us</a></li>
+          <li className="li"><a href="">Home</a></li>
+          <li className="li"><a href="">Market</a></li>
+          <li className="li"><a href="">Learnings</a></li>
+          <li className="li"><a href="">About us</a></li>
         </ul>
       </header>
-      <div class="hero-main">
-        <div class="left">
+      <div className="hero-main">
+        <div className="left">
           <span>The one and only</span>
           <h1>Platform</h1>
           <span>That provides virtual future</span>
-          <div class="btn">
-            <a href=""><button class="link1">Get Started</button></a>
-            <a href=""><button class="link2">Learn More</button></a>
+          <div className="btn">
+            <a href=""><button className="link1">Get Started</button></a>
+            <a href=""><button className="link2">Learn More</button></a>
           </div>
         </div>
-        <img src="./src/assets/images/bg.svg" alt="" class="bg-hero"></img>
+        <img src="./src/assets/images/bg.svg" alt="" className="  bg-hero"></img>
       </div>
     </div>
   </section>
@@ -36,4 +35,4 @@ function App() {
      
 )
   }
-export default App
+export default homePage
