@@ -63,6 +63,13 @@ button {
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+  
+  
+  
+}
+.line{
+ margin-top:30px;
+border: 2px solid #151515;
 }
 
 .hero header span{
@@ -70,19 +77,67 @@ button {
   font-size: 2.4rem;
   color: var(--blue);
   
+  
+  
 }
 
 
 .hero header ul {
   display: flex;
   gap: 62px;
+  
 }
 
 .hero header a {
   font-weight: 500;
   font-size: 1.8rem;
   color: var(--gray-light);
+  
 }
+
+
+.hero header a:hover{
+  color: white;
+}
+
+
+.li a {
+  padding: 0.3em 0;
+  color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.li a:before,
+.li a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #9b59b6;
+  width: 0;
+}
+.li a:before {
+  top: 0;
+  left: 0;
+}
+.li a:after {
+  bottom: 0;
+  right: 0;
+}
+.li a:hover,
+.li .current a {
+  color: #ffffff;
+}
+.li a:hover:before,
+.li .current a:before,
+.li a:hover:after,
+.li .current a:after {
+  width: 100%;
+}
+
+
 
 .hero-main {
   display: flex;
@@ -93,6 +148,7 @@ button {
 .bg-hero {
   position: absolute;
   right: 0;
+  
 }
 
 .hero-main .left span {
@@ -107,6 +163,7 @@ button {
   text-transform: uppercase;
   color: var(--blue);
   margin: 12px 0;
+  
 }
 
 .btn {
@@ -127,6 +184,7 @@ button {
   border: 0;
   border-radius: 6px;
   position: relative;
+  transition: all 0.4s ease;
 }
 
 .link1 {
@@ -135,6 +193,7 @@ button {
     var(--gradient-purple-from),
     var(--gradient-purple-to)
   );
+  
   z-index: 1;
 }
 .link1::before {
@@ -144,7 +203,14 @@ button {
   inset: 2px;
   z-index: -1;
   border-radius: 4px;
+  
 }
+.link1:hover:before{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
 
 .link2 {
   background: linear-gradient(
@@ -163,4 +229,31 @@ button {
   z-index: -1;
   border-radius: 4px;
 }
+.link2:hover:before{
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+
+
+
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0%;
+  }
+  100%
+  {
+    background-position: 400%;
+  }
+}
+
+
+
+
+
+
+
 
