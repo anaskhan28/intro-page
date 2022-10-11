@@ -17,9 +17,7 @@
   --light: #ffffff;
 }
 
-html {
-  font-size: 62.5%;
-}
+
 
 body {
   max-width: 100vw;
@@ -45,18 +43,21 @@ button {
   margin: 0 auto;
   width: 1080px;
   height: 100%;
+  
 }
 
 .hero {
   background-color: var(--dark);
   height: 734px;
   width: 100%;
+  
 }
 
 .hero .content {
   display: flex;
   flex-direction: column;
   max-width: 1440px;
+  
 }
 
 .hero header {
@@ -66,17 +67,19 @@ button {
   
   
   
+  
 }
 .line{
  margin-top:25px;
 border: 1.5px solid #151515;
+
 }
 
 .hero header span{
   font-weight: 500;
   font-size: 2.4rem;
   color: var(--blue);
-  
+  font-size: 20px;
   
   
 }
@@ -86,18 +89,21 @@ border: 1.5px solid #151515;
   display: flex;
   gap: 62px;
   
+  
 }
 
 .hero header a {
   font-weight: 500;
   font-size: 1.8rem;
   color: var(--gray-light);
+  font-size: 20px;
   
 }
 
 
 .hero header a:hover{
   color: white;
+  font-size: 20px;
 }
 
 
@@ -107,6 +113,7 @@ border: 1.5px solid #151515;
   position: relative;
   text-decoration: none;
   display: inline-block;
+  
 }
 .li a:before,
 .li a:after {
@@ -143,6 +150,7 @@ border: 1.5px solid #151515;
   display: flex;
   align-items: center;
   height: 100%;
+  
 }
 
 .bg-hero {
@@ -155,6 +163,7 @@ border: 1.5px solid #151515;
   font-size: 2.4rem;
   font-weight: 600;
   text-transform: uppercase;
+  font-size: 20px;
 }
 
 .hero-main .left h1 {
@@ -164,15 +173,19 @@ border: 1.5px solid #151515;
   color: var(--blue);
   margin: 12px 0;
   
+  
+  
 }
 
 .btn {
   display: flex;
   gap: 20px;
+  font-size: 20px;
 }
 
 .hero-main .btn{
   margin-top: 60px;
+  font-size: 20px;
 }
 
 .btn button {
@@ -185,6 +198,7 @@ border: 1.5px solid #151515;
   border-radius: 6px;
   position: relative;
   transition: all 0.4s ease;
+  font-size: 20px;
 }
 
 .link1 {
